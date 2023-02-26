@@ -57,12 +57,6 @@ yabai -m rule --add title='Calculator$' manage=off
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
 
-# Some Goland settings, in case you are using it. float Goland Preference panes
-yabai -m rule --add app='Goland IDEA' title='^$' manage=off
-yabai -m rule --add app='Goland IDEA' title='Project Structure' manage=off
-yabai -m rule --add app='Goland IDEA' title='Preferences' manage=off
-yabai -m rule --add app='Goland IDEA' title='Edit configuration' manage=off
-
 # Disable animations when opening and closing windows.
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
