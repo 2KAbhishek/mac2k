@@ -1,3 +1,6 @@
+# minimize window
+cmd - e : yabai -m window --minimize
+
 # change focus
 cmd - h : yabai -m window --focus west
 cmd - j : yabai -m window --focus south
@@ -60,7 +63,7 @@ cmd + shift - x : yabai -m space --mirror x-axis
 cmd + shift - 0 : yabai -m space --balance
 
 # change layout of desktop
-cmd - e : yabai -m space --layout bsp
+cmd - z : yabai -m space --layout bsp
 cmd - f : yabai -m space --layout float
 cmd - s : yabai -m space --layout stack
 
