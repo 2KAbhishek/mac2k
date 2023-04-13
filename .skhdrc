@@ -41,6 +41,10 @@ cmd - b : yabai -m space --focus recent
 cmd + shift - b : yabai -m window --space recent; \
                   yabai -m space --focus recent
 
+# float / unfloat window and center on screen
+cmd + shift - m : yabai -m window --toggle float;\
+          yabai -m window --grid 4:4:1:1:2:2
+
 # move focused window to next/prev workspace
 cmd + shift - 1 : yabai -m window --space 1
 cmd + shift - 2 : yabai -m window --space 2
@@ -62,10 +66,18 @@ cmd + shift - x : yabai -m space --mirror x-axis
 # balance size of windows
 cmd + shift - 0 : yabai -m space --balance
 
+# rotate tree
+cmd + ctrl - r : yabai -m space --rotate 90
+
 # change layout of desktop
-cmd - z : yabai -m space --layout bsp
-cmd - f : yabai -m space --layout float
-cmd - s : yabai -m space --layout stack
+cmd + ctrl - z : yabai -m space --layout bsp
+cmd + ctrl - s : yabai -m window --toggle split
+cmd + ctrl - f : yabai -m space --layout float
+# cmd + ctrl - s : yabai -m space --layout stack
+
+# send window to monitor and follow focus
+cmd + shift - n : yabai -m window --display next; yabai -m display --focus next
+cmd + shift - p : yabai -m window --display previous; yabai -m display --focus previous
 
 # cycle through stack windows
 # cmd - p : yabai -m window --focus stack.next || yabai -m window --focus south
