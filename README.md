@@ -20,7 +20,7 @@
 <a href="https://github.com/2KAbhishek/Macfiles/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/Macfiles?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
+<h3>Ultimate Dev Setup for Mac OS 🚀🍎</h3>
 
 <figure>
   <img src="images/screenshot.jpg" alt="Macfiles in action">
@@ -30,68 +30,86 @@
 
 </div>
 
-Macfiles is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+Macfiles is a set of handcrafted configs for setting up a complete dev environment on Mac OS.
+
+It makes developing on Mac much more pleasant for CLI lovers.
 
 ## ✨ Features
 
-- Supports foo
-- Can do bar
-- Works with bazz
+- Can set up a complete dev environment within minutes
+- Powerful personalized editing with [nvim2k](https://github.com/2kabhishek/nvim2k)
+- Shiny and extensible prompt with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel2k](https://github.com/2KAbhishek/Dotfiles/blob/main/.config/shell/powerlevel2k.zsh)
+- Tiling window management with [yabai](https://github.com/koekeishiya/yabai) and [skhd](https://github.com/koekeishiya/skhd)
+- All the power and tools provider by [Dotfiles](https://github.com/2kabhishek/Dotfiles)
+- More!!
 
 ## Setup
-
-### ⚡ Requirements
-
-- foo >= bar
-- bazz
 
 ### 🚀 Installation
 
 ```bash
 git clone https://github.com/2kabhishek/Macfiles
 cd Macfiles
-<install_command>
+
+./setup.sh
+
 ```
+
+This will install all necessary packages, symlinks and setup symlinks for you.
 
 ### 💻 Usage
 
+#### Setting up iTerm
+
+Run iTerm and open "Preferences", Go to "Profiles" tab and click on "Other Actions" and then click on "Import JSON Profiles"
+
+Select the [./configs/iTerm.json](./configs/iTerm.json) file and import it.
+
+#### Tiling
+
+To enable Tiling WM and keyboard shortcuts run the following
+
 ```bash
-USAGE:
-    Macfiles [FLAGS] [OPTIONS]
-Example:
-    Macfiles
+yabai --start-service
+skhd --start-service
 ```
+
+#### More Tools
+
+I have intentionally kept the default list of packages to bare essentials.
+If you want any other tools you can install them with brew.
+
+```bash
+# Install VS Code
+brew install visual-studio-code
+```
+
+You can also search for packages using `brew search name`.
+
+#### Other Configs
+
+For most tools I'm symlinking configs over from my main [Dotfiles](https://github.com/2kabhishek/Dotfiles).
+
+You can do the same or plugin your own.
 
 ## What's Next
 
-Planning to add `<feature/module>`.
-
-### ✅ To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-
-##  Behind The Code
+## Behind The Code
 
 ### 🌈 Inspiration
 
-Macfiles was inspired by `<reason/idea>`.
+I am a big fan of CLI and Tiling WMs, MacOS by default doesn't provide a good solution for those, so I decided to make my own.
 
 ### 💡 Challenges/Learnings
 
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
+- Some hiccups with brew and services
+- Learned and implemented recursive git submodules
 
 ### 🧰 Tooling
 
 - [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
 - [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
-- [awesome2k](https://github.com/2kabhishek/awesome2k) — Tiling Window Manager
-
-### 🔍 More Info
-
-- [similar](https://github.com/2kabhishek/similar) — a related repo
+- iTerm
 
 <hr>
 
