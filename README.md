@@ -23,7 +23,7 @@
 <h3>Short Sweet Headline 🎇🎉</h3>
 
 <figure>
-  <img src="images/screenshot.png" alt="Macfiles in action">
+  <img src="images/screenshot.jpg" alt="Macfiles in action">
   <br/>
   <figcaption>Macfiles in action</figcaption>
 </figure>
