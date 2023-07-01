@@ -6,11 +6,6 @@ cmd - h : yabai -m window --focus west
 cmd - j : yabai -m window --focus south
 cmd - k : yabai -m window --focus north
 cmd - l : yabai -m window --focus east
-# (cmd) change focus (using arrow keys)
-cmd - left  : yabai -m window --focus west
-cmd - down  : yabai -m window --focus south
-cmd - up    : yabai -m window --focus north
-cmd - right : yabai -m window --focus east
 
 # shift window in current workspace
 cmd + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
