@@ -7,7 +7,7 @@ setup_macos() {
     defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
     # "show hidden files by default"
-    defaults write com.apple.Finder AppleShowAllFiles -bool false
+    defaults write com.apple.Finder AppleShowAllFiles -bool true
 
     # "only use UTF-8 in Terminal.app"
     defaults write com.apple.terminal StringEncodings -array 4
@@ -49,13 +49,21 @@ setup_macos() {
     defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
     # "Kill affected applications"
-
     for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
 }
 
-function setup {
-    cd "$PWD/dots2k" && ./setup.sh && cd .. || exit 1
+install_brew() {
+    if ! command -v "brew" &>/dev/null; then
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+    fi
+}
+
+setup() {
     setup_macos
+    install_brew
+    cd "$PWD/dots2k" && ./setup.sh && cd .. || exit 1
 }
 
 if [ -f "$PWD/dots2k/setup.sh" ]; then
