@@ -66,6 +66,8 @@ yabai -m rule --add title='Authy' manage=off
 yabai -m rule --add title='Stats' manage=off
 yabai -m rule --add title='Settings$' manage=off
 
+yabai -m rule --add app="^qutebrowser$" title!="^$" role="AXWindow" subrole="AXDialog" manage=on
+
 # Disable animations when opening and closing windows.
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
