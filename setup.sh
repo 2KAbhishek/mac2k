@@ -56,9 +56,6 @@ install_packages() {
 setup_symlinks() {
     echo "Setting up symlinks"
     ln -sfn "$PWD/config/aerospace" "$HOME/.config/"
-    ln -sfn "$PWD/config/.yabairc" "$HOME/"
-    ln -sfn "$PWD/config/.skhdrc" "$HOME/"
-    ln -sfn "$PWD/config/iterm/iterm.sh" "$HOME/.local/bin/"
     ln -sfn "$PWD/dots2k/config/lazygit/config.yml" "$HOME/Library/Application Support/lazygit/"
 }
 
