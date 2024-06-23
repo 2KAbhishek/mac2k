@@ -9,7 +9,7 @@ after-login-command = []
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -95,8 +95,7 @@ cmd-left = 'workspace --wrap-around prev'
 cmd-right = 'workspace --wrap-around next'
 f11 = 'fullscreen'
 
-# alt-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.-app'
-alt-enter = 'exec-and-forget alacritty'
+# alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app' # Super + N to open new alacritty terminal
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 cmd-h = 'focus left'
