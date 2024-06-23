@@ -89,6 +89,51 @@ I also set up some keybindings manually:
   - <kbd>Space</kbd> open Menu items search
   - <kbd>v</kbd> open Clipboard History
 
+##### Arc Keybindings
+
+- <kbd>Option</kbd> Shortcuts:
+  - <kbd>\\</kbd> Add Split
+  - <kbd>`</kbd> Open Console
+  - <kbd>1..8</kbd> Sidebar item 1 to 8
+  - <kbd>9</kbd> Last Sidebar item
+  - <kbd>Shift+1..8</kbd> Switch to space 1 to 8
+  - <kbd>Shift+C</kbd> Portrait Screenshot
+  - <kbd>Shift+D</kbd> Toggle developer mode
+  - <kbd>Shift+F</kbd> Full Page Screenshot
+  - <kbd>Shift+H/Shift+L</kbd> Previous / Next space
+  - <kbd>Shift+I</kbd> View Source
+  - <kbd>Shift+N</kbd> Add new space
+  - <kbd>Shift+O</kbd> Manage spaces
+  - <kbd>Shift+P</kbd> New incognito window
+  - <kbd>Shift+R</kbd> Clear cookies and refresh
+  - <kbd>Shift+Y</kbd> Copy URL as Markdown
+  - <kbd>Shift+W</kbd> Show Archived Tabs
+  - <kbd>Shift+Z</kbd> Move Little Arc to Space
+  - <kbd>a</kbd> View downloads
+  - <kbd>b</kbd> Duplicate Tab
+  - <kbd>c</kbd> Portrait Screenshot
+  - <kbd>d</kbd> Developer Tools
+  - <kbd>e</kbd> Toggle sidebar
+  - <kbd>f</kbd> Find in page
+  - <kbd>g</kbd> Open Library
+  - <kbd>h/l</kbd> Previous/Next Tab
+  - <kbd>i</kbd> Inspect elements
+  - <kbd>j,] / k,[</kbd> Go forward / backward
+  - <kbd>m</kbd> ChatGPT message
+  - <kbd>n</kbd> New window
+  - <kbd>o</kbd> Command bar
+  - <kbd>p</kbd> Pin / Unpin tab
+  - <kbd>r</kbd> History
+  - <kbd>s</kbd> Separate tab from split
+  - <kbd>t</kbd> New tab
+  - <kbd>u</kbd> Undo close tab
+  - <kbd>w</kbd> Archive taab
+  - <kbd>x</kbd> Close split pane
+  - <kbd>y</kbd> Copy URL
+  - <kbd>z</kbd> Little Arc Window
+
+More browser keybindings configured with [Vimium](./dots2k/config/vimium.json), Qutebrowser uses [qute2k](https://github.com/2kabhishek/qute2k) for keybindings.
+
 #### Aliases
 
 This also comes with a bunch of mac aliases in [./dots2k/.config/shell/aliases.sh](./dots2k/.config/shell/aliases.sh) to make your life easier.
