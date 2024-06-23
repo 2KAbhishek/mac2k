@@ -36,11 +36,13 @@ It makes developing on Mac much more pleasant for CLI lovers.
 
 ## ✨ Features
 
-- Can set up a complete dev environment within minutes
+- Sets up a complete dev environment within minutes
+- Sets up brew and installs essential packages with Brewfile
+- Configures optimal settings for developers
+- All the power and tools provider by [dots2k](https://github.com/2kabhishek/dots2k)
 - Powerful personalized editing with [nvim2k](https://github.com/2kabhishek/nvim2k)
-- Shiny and extensible prompt with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel2k](https://github.com/2KAbhishek/Dotfiles/blob/main/.config/shell/powerlevel2k.zsh)
-- Tiling window management with [yabai](https://github.com/koekeishiya/yabai) and [skhd](https://github.com/koekeishiya/skhd)
-- All the power and tools provider by [Dotfiles](https://github.com/2kabhishek/Dotfiles)
+- Keyboard driven browsing support with [qute2k](https://github.com/2kabhishek/qute2k)
+- Tiling window management with [Aerospace](https://github.com/nikitabobko/AeroSpace)
 - More!!
 
 ## Setup
@@ -52,53 +54,51 @@ git clone https://github.com/2kabhishek/mac2k
 cd mac2k
 
 ./setup.sh
-
 ```
 
 This will install all necessary packages, symlinks and setup symlinks for you.
 
+To manually run steps from [dots2k setup](./dots2k/setup.sh) you can run `./dots2k/setup.sh`
+
 ### 💻 Usage
 
-#### Setting up iTerm
+#### Other Configs
+
+For most tools I'm symlinking configs over from [dots2k](https://github.com/2kabhishek/dots2k).
+
+##### Setting up iTerm
+
+> I use Alacritty as my default terminal now
 
 Run iTerm and open "Preferences", Go to "Profiles" tab and click on "Other Actions" and then click on "Import JSON Profiles"
 
-Select the [./configs/iTerm.json](./configs/iTerm.json) file and import it.
+Select the [./configs/iterm/preofile.json](./configs/profile.json) file and import it.
 
-#### Tiling
+You can also use the [helper script](./config/iterm/iterm) to open iterm from terminal by symlinking it to your path and running `iterm`.
 
-To enable Tiling WM and keyboard shortcuts run the following
+##### Tiling Window Management
+
+> I use [Aerospace](./config/aerospace/aerospace.toml) as my tiling window manager now
+
+`yabai` and `skhd` together provide a tiling window management system for MacOS.
 
 ```bash
+# Symlink yabai and skhd configs
+ln -sfn "$PWD/config/.yabairc" "$HOME/"
+ln -sfn "$PWD/config/.skhdrc" "$HOME/"
+
+# Start yabai and skhd
 yabai --start-service
 skhd --start-service
 ```
 
-#### More Tools
-
-I have intentionally kept the default list of packages to bare essentials.
-If you want any other tools you can install them with brew.
-
-```bash
-# Install VS Code
-brew install visual-studio-code
-```
-
-You can also search for packages using `brew search name`.
-
-#### Other Configs
-
-For most tools I'm symlinking configs over from my main [Dotfiles](https://github.com/2kabhishek/Dotfiles).
-
-You can do the same or plugin your own.
-
-## What's Next
+You can use the alias `macres` to restart yabai and skhd
 
 ## Behind The Code
 
 ### 🌈 Inspiration
 
-I am a big fan of CLI and Tiling WMs, MacOS by default doesn't provide a good solution for those, so I decided to make my own.
+I am a big fan of CLI and Tiling WMs, MacOS by default doesn't provide a good solution for those, so I decided to configure my own.
 
 ### 💡 Challenges/Learnings
 
@@ -107,9 +107,8 @@ I am a big fan of CLI and Tiling WMs, MacOS by default doesn't provide a good so
 
 ### 🧰 Tooling
 
-- [Dotfiles](https://github.com/2kabhishek/Dotfiles) — Dev Environment
+- [dots2k](https://github.com/2kabhishek/dots2k) — Personalized Dev Environment
 - [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
-- iTerm
 
 <hr>
 
@@ -125,4 +124,3 @@ I am a big fan of CLI and Tiling WMs, MacOS by default doesn't provide a good so
 | <a href="https://2kabhishek.github.io/projects" target="_blank">Other Projects </a>
 
 </div>
-
