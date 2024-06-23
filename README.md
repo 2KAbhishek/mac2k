@@ -73,21 +73,65 @@ I also set up some keybindings manually:
 - Remap <kbd>Caps Lock</kbd> to <kbd>Esc</kbd>
 - Swap <kbd>Fn</kbd> and <kbd>Ctrl</kbd>
 
+##### Aerospace Keybindings
+
+###### General Keybindings
+
+| Keybinding                                | Command                             | Description                        |
+| ----------------------------------------- | ----------------------------------- | ---------------------------------- |
+| <kbd>Cmd</kbd>+<kbd>1..9</kbd>            | workspace `num`                     | Switch to workspace `num`          |
+| <kbd>Cmd</kbd>+<kbd>Shift + 1..9</kbd>    | move-node-to-workspace `num`        | Move window to workspace `num`     |
+| <kbd>Cmd</kbd>+<kbd>Shift + ,//</kbd>     | layout v_tiles / h_tiles            | Vertical / Horizontal tiles        |
+| <kbd>Cmd</kbd>+<kbd>Shift + -/=</kbd>     | resize smart -50/+50                | Inc/Dec window size                |
+| <kbd>Cmd</kbd>+<kbd>h/j/k/l</kbd>         | focus `direction`                   | Focus window in `direction`        |
+| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd> | move `direction`                    | Move window to `direction`         |
+| <kbd>Cmd</kbd>+<kbd>Shift + C</kbd>       | reload-config                       | Reload configuration               |
+| <kbd>Cmd</kbd>+<kbd>Shift + F</kbd>       | layout floating tiling              | Toggle floating / tiling layout    |
+| <kbd>Cmd</kbd>+<kbd>Shift + M</kbd>       | fullscreen                          | Toggle fullscreen                  |
+| <kbd>Cmd</kbd>+<kbd>Shift + T</kbd>       | layout tiles horizontal vertical    | Toggle horizontal / vertical tiles |
+| <kbd>Cmd</kbd>+<kbd>e</kbd>               | macos-native-minimize               | Minimize window                    |
+| <kbd>Cmd</kbd>+<kbd>left/right</kbd>      | workspace --wrap-around prev / next | Previous/Next workspace            |
+| <kbd>Option</kbd>+<kbd>Shift + Tab</kbd>  | move-workspace-to-monitor           | Move workspace to next screen      |
+| <kbd>Option</kbd>+<kbd>Tab</kbd>          | workspace-back-and-forth            | Switch between workspaces          |
+
+###### Service Mode Keybindings
+
+| Keybinding                                | Command                       | Description                      |
+| ----------------------------------------- | ----------------------------- | -------------------------------- |
+| <kbd>Cmd</kbd>+<kbd>Shift + ;</kbd>       | mode service                  | Switch to service mode           |
+| <kbd>esc</kbd>                            | reload-config                 | Reload configuration             |
+| <kbd>r</kbd>                              | flatten-workspace-tree        | Reset layout                     |
+| <kbd>f</kbd>                              | layout floating tiling        | Toggle between floating / tiling |
+| <kbd>backspace</kbd>                      | close-all-windows-but-current | Close all windows except current |
+| <kbd>Cmd</kbd>+<kbd>Shift + h/j/k/l</kbd> | join-with `direction`         | Join with window in direction    |
+
+###### Resize Mode Keybindings
+
+| Keybinding                          | Command           | Description            |
+| ----------------------------------- | ----------------- | ---------------------- |
+| <kbd>Cmd</kbd>+<kbd>Shift + R</kbd> | mode resize       | Switch to resize mode  |
+| <kbd>h</kbd>                        | resize width -50  | Decrease window width  |
+| <kbd>j</kbd>                        | resize height +50 | Increase window height |
+| <kbd>k</kbd>                        | resize height -50 | Decrease window height |
+| <kbd>l</kbd>                        | resize width +50  | Increase window width  |
+| <kbd>Enter</kbd>                    | mode main         | Switch to main mode    |
+| <kbd>Esc</kbd>                      | mode main         | Switch to main mode    |
+
 ##### Raycast Keybindings
 
 - <kbd>Cmd</kbd> Shortcuts:
 
-  - <kbd>Space</kbd> open Raycast
-  - <kbd>[</kbd> open Alacritty
-  - <kbd>]</kbd> open Qutebrowser
-  - <kbd>'</kbd> open Arc Browser
-  - <kbd>;</kbd> open Raycast Camera
-  - <kbd>.</kbd> open Emoji Picker
-  - <kbd>i</kbd> open System Preferences
+  - <kbd>Space</kbd> Raycast
+  - <kbd>[</kbd> Alacritty
+  - <kbd>]</kbd> Qutebrowser
+  - <kbd>'</kbd> Arc Browser
+  - <kbd>;</kbd> Raycast Camera
+  - <kbd>.</kbd> Emoji Picker
+  - <kbd>i</kbd> System Preferences
 
 - <kbd>Option</kbd> Shortcuts:
-  - <kbd>Space</kbd> open Menu items search
-  - <kbd>v</kbd> open Clipboard History
+  - <kbd>Space</kbd> Menu items search
+  - <kbd>v</kbd> Clipboard History
 
 ##### Arc Keybindings
 
@@ -138,7 +182,7 @@ More browser keybindings configured with [Vimium](./dots2k/config/vimium.json), 
 
 This also comes with a bunch of mac aliases in [./dots2k/.config/shell/aliases.sh](./dots2k/.config/shell/aliases.sh) to make your life easier.
 
-- `aerr`, `aert` for aeropace reload config and toggle
+- `aerr`, `aert`, `aerc` for aeropace reload config, toggle and editing config
 - `bri`, `brr`, `brc`, `brs`, `bru` to brew install, uninstall, cleanup, search, update respectively
 - `macdis` to disable mac's internal display, useful when using external display, needs restart to re-enable
 

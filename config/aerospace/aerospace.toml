@@ -80,22 +80,17 @@ PATH = '/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}'
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 cmd-shift-slash = 'layout h_tiles'
 cmd-shift-comma = 'layout v_tiles'
-# cmd-shift-h = 'split horizontal'
-# cmd-shift-v = 'split vertical'
 
-cmd-shift-f = 'fullscreen'
-
-cmd-shift-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
-
-cmd-shift-space = 'layout floating tiling' # 'floating toggle' in i3
-cmd-shift-c = 'reload-config'
-cmd-e = 'macos-native-minimize'
+# alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app' # use Super + N to open new alacritty terminal
 # cmd-enter = 'macos-native-fullscreen'
+cmd-e = 'macos-native-minimize'
 cmd-left = 'workspace --wrap-around prev'
 cmd-right = 'workspace --wrap-around next'
+cmd-shift-c = 'reload-config'
+cmd-shift-f = 'layout floating tiling' # 'floating toggle' in i3
+cmd-shift-m = 'fullscreen'
+cmd-shift-t = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 f11 = 'fullscreen'
-
-# alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app' # Super + N to open new alacritty terminal
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 cmd-h = 'focus left'
