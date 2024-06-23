@@ -62,6 +62,14 @@ To manually run steps from [dots2k setup](./dots2k/setup.sh) you can run `./dots
 
 ### 💻 Usage
 
+#### Aliases
+
+This also comes with a bunch of mac aliases in [./dots2k/.config/shell/aliases.sh](./dots2k/.config/shell/aliases.sh) to make your life easier.
+
+- `aerr`, `aert` for aeropace reload config and toggle
+- `bri`, `brr`, `brc`, `brs`, `bru` to brew install, uninstall, cleanup, search, update respectively
+- `macdis` to disable mac's internal display, useful when using external display, needs restart to re-enable
+
 #### Other Configs
 
 For most tools I'm symlinking configs over from [dots2k](https://github.com/2kabhishek/dots2k).
@@ -90,9 +98,10 @@ ln -sfn "$PWD/config/.skhdrc" "$HOME/"
 # Start yabai and skhd
 yabai --start-service
 skhd --start-service
-```
 
-You can use the alias `macres` to restart yabai and skhd
+# Add alias to restart yabai and skhd
+alias macres="yabai --restart-service && skhd --restart-service"
+```
 
 ## Behind The Code
 
