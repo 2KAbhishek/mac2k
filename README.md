@@ -62,6 +62,33 @@ To manually run steps from [dots2k setup](./dots2k/setup.sh) you can run `./dots
 
 ### 💻 Usage
 
+#### Keybindings
+
+I also set up some keybindings manually:
+
+> Cmd = ⌘/Windows/Super, Option = ⌥/Alt, Control = ⌃/Ctrl, Function = fn
+
+##### System Keybindings
+
+- Remap <kbd>Caps Lock</kbd> to <kbd>Esc</kbd>
+- Swap <kbd>Fn</kbd> and <kbd>Ctrl</kbd>
+
+##### Raycast Keybindings
+
+- <kbd>Cmd</kbd> Shortcuts:
+
+  - <kbd>Space</kbd> open Raycast
+  - <kbd>[</kbd> open Alacritty
+  - <kbd>]</kbd> open Qutebrowser
+  - <kbd>'</kbd> open Arc Browser
+  - <kbd>;</kbd> open Raycast Camera
+  - <kbd>.</kbd> open Emoji Picker
+  - <kbd>i</kbd> open System Preferences
+
+- <kbd>Option</kbd> Shortcuts:
+  - <kbd>Space</kbd> open Menu items search
+  - <kbd>v</kbd> open Clipboard History
+
 #### Aliases
 
 This also comes with a bunch of mac aliases in [./dots2k/.config/shell/aliases.sh](./dots2k/.config/shell/aliases.sh) to make your life easier.
