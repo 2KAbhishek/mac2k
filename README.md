@@ -73,6 +73,14 @@ I also set up some keybindings manually:
 - Remap <kbd>Caps Lock</kbd> to <kbd>Esc</kbd>
 - Swap <kbd>Fn</kbd> and <kbd>Ctrl</kbd>
 
+- <kbd>Cmd</kbd> + <kbd>Shift+S</kbd> : Screenshot Panel
+- <kbd>Option</kbd> + <kbd>Shift+S</kbd> : Select area and copy screenshot to clipboard
+
+- <kbd>Cmd</kbd> + <kbd>&#8592;</kbd> : Show Notification Center
+- <kbd>Cmd</kbd> + <kbd>&#8593;</kbd> : Show Mission Control
+- <kbd>Cmd</kbd> + <kbd>&#8594;</kbd> : Show Application Windows
+- <kbd>Cmd</kbd> + <kbd>&#8595;</kbd> : Show Desktop
+
 ##### Aerospace Keybindings
 
 ###### General Keybindings
@@ -137,7 +145,7 @@ I also set up some keybindings manually:
 
 - <kbd>Option</kbd> Shortcuts:
   - <kbd>\\</kbd> Add Split
-  - <kbd>`</kbd> Open Console
+  - <kbd>\`</kbd> Open Console
   - <kbd>1..8</kbd> Sidebar item 1 to 8
   - <kbd>9</kbd> Last Sidebar item
   - <kbd>Shift+1..8</kbd> Switch to space 1 to 8
