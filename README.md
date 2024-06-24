@@ -58,7 +58,7 @@ cd mac2k
 
 This will install all necessary packages, symlinks and setup symlinks for you.
 
-To manually run steps from [dots2k setup](./dots2k/setup.sh) you can run `./dots2k/setup.sh`
+To manually run steps from [dots2k setup](https://github.com/2kabhishek/dots2k/tree/main/setup.sh) you can run `https://github.com/2kabhishek/dots2k/tree/main/setup.sh`
 
 ### 💻 Usage
 
@@ -186,11 +186,11 @@ I also set up some keybindings manually:
   - <kbd>x</kbd> Close split pane
   - <kbd>y</kbd> Copy URL
 
-More browser keybindings configured with [Vimium](./dots2k/config/vimium.json), Qutebrowser uses [qute2k](https://github.com/2kabhishek/qute2k) for keybindings.
+More browser keybindings configured with [Vimium](https://github.com/2kabhishek/dots2k/tree/main/config/vimium.json), Qutebrowser uses [qute2k](https://github.com/2kabhishek/qute2k) for keybindings.
 
 #### Aliases
 
-This also comes with a bunch of mac aliases in [./dots2k/.config/shell/aliases.sh](./dots2k/.config/shell/aliases.sh) to make your life easier.
+This also comes with a bunch of mac aliases in [dots2k shell/aliases.sh](https://github.com/2kabhishek/dots2k/tree/main/config/shell/aliases.sh) to make your life easier.
 
 - `aerr`, `aert`, `aerc` for aeropace reload config, toggle and editing config
 - `bri`, `brr`, `brc`, `brs`, `bru` to brew install, uninstall, cleanup, search, update respectively
