@@ -141,11 +141,13 @@ I also set up some keybindings manually:
   - <kbd>1..8</kbd> Sidebar item 1 to 8
   - <kbd>9</kbd> Last Sidebar item
   - <kbd>Shift+1..8</kbd> Switch to space 1 to 8
+  - <kbd>Shift+B</kbd> Open Little Arc Window
   - <kbd>Shift+C</kbd> Portrait Screenshot
   - <kbd>Shift+D</kbd> Toggle developer mode
   - <kbd>Shift+F</kbd> Full Page Screenshot
   - <kbd>Shift+H/Shift+L</kbd> Previous / Next space
   - <kbd>Shift+I</kbd> View Source
+  - <kbd>Shift+M</kbd> Join Meeting (Works with Pinned calendar tabs)
   - <kbd>Shift+N</kbd> Add new space
   - <kbd>Shift+O</kbd> Manage spaces
   - <kbd>Shift+P</kbd> New incognito window
@@ -174,7 +176,6 @@ I also set up some keybindings manually:
   - <kbd>w</kbd> Archive taab
   - <kbd>x</kbd> Close split pane
   - <kbd>y</kbd> Copy URL
-  - <kbd>z</kbd> Little Arc Window
 
 More browser keybindings configured with [Vimium](./dots2k/config/vimium.json), Qutebrowser uses [qute2k](https://github.com/2kabhishek/qute2k) for keybindings.
 
