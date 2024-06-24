@@ -152,6 +152,7 @@ I also set up some keybindings manually:
   - <kbd>Shift+O</kbd> Manage spaces
   - <kbd>Shift+P</kbd> New incognito window
   - <kbd>Shift+R</kbd> Clear cookies and refresh
+  - <kbd>Shift+T</kbd> Toggle toolbar
   - <kbd>Shift+Y</kbd> Copy URL as Markdown
   - <kbd>Shift+W</kbd> Show Archived Tabs
   - <kbd>Shift+Z</kbd> Move Little Arc to Space
