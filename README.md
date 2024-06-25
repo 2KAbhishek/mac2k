@@ -151,7 +151,7 @@ I also set up some keybindings manually:
   - <kbd>Shift+1..8</kbd> Switch to space 1 to 8
   - <kbd>Shift+B</kbd> Open Little Arc Window
   - <kbd>Shift+C</kbd> Portrait Screenshot
-  - <kbd>Shift+D</kbd> Toggle developer mode
+  - <kbd>Shift+D</kbd> Toggle dark mode
   - <kbd>Shift+F</kbd> Full Page Screenshot
   - <kbd>Shift+H/Shift+L</kbd> Previous / Next space
   - <kbd>Shift+I</kbd> View Source
@@ -161,23 +161,25 @@ I also set up some keybindings manually:
   - <kbd>Shift+P</kbd> New incognito window
   - <kbd>Shift+R</kbd> Clear cookies and refresh
   - <kbd>Shift+T</kbd> Toggle toolbar
+  - <kbd>Shift+U</kbd> Toggle uBlock Origin
   - <kbd>Shift+Y</kbd> Copy URL as Markdown
   - <kbd>Shift+W</kbd> Show Archived Tabs
   - <kbd>Shift+Z</kbd> Move Little Arc to Space
   - <kbd>a</kbd> View downloads
   - <kbd>b</kbd> Duplicate Tab
   - <kbd>c</kbd> Portrait Screenshot
-  - <kbd>d</kbd> Developer Tools
+  - <kbd>d</kbd> Developer Mode
   - <kbd>e</kbd> Toggle sidebar
   - <kbd>f</kbd> Find in page
   - <kbd>g</kbd> Open Library
   - <kbd>h/l</kbd> Previous/Next Tab
-  - <kbd>i</kbd> Inspect elements
+  - <kbd>i</kbd> Developer Tools
   - <kbd>j,] / k,[</kbd> Go forward / backward
   - <kbd>m</kbd> ChatGPT message
   - <kbd>n</kbd> New window
   - <kbd>o</kbd> Command bar
   - <kbd>p</kbd> Pin / Unpin tab
+  - <kbd>q</kbd> Close Window
   - <kbd>r</kbd> History
   - <kbd>s</kbd> Separate tab from split
   - <kbd>t</kbd> New tab
@@ -185,6 +187,7 @@ I also set up some keybindings manually:
   - <kbd>w</kbd> Archive taab
   - <kbd>x</kbd> Close split pane
   - <kbd>y</kbd> Copy URL
+  - <kbd>z</kbd> Network Inspector
 
 More browser keybindings configured with [Vimium](https://github.com/2kabhishek/dots2k/tree/main/config/vimium.json), Qutebrowser uses [qute2k](https://github.com/2kabhishek/qute2k) for keybindings.
 
