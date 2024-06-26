@@ -145,13 +145,16 @@ I also set up some keybindings manually:
 
 - <kbd>Option</kbd> Shortcuts:
   - <kbd>\\</kbd> Add Split
-  - <kbd>\`</kbd> Open Console
+  - <kbd>\`</kbd> Tab Switcher
+  - <kbd>Shift+\`</kbd> Tab Switcher (Reverse)
   - <kbd>1..8</kbd> Sidebar item 1 to 8
   - <kbd>9</kbd> Last Sidebar item
   - <kbd>Shift+1..8</kbd> Switch to space 1 to 8
+  - <kbd>Shift+A</kbd> Portrait Screenshot
   - <kbd>Shift+B</kbd> Open Little Arc Window
-  - <kbd>Shift+C</kbd> Portrait Screenshot
-  - <kbd>Shift+D</kbd> Toggle dark mode
+  - <kbd>Shift+C</kbd> Open Console
+  - <kbd>Shift+D</kbd> Toggle Dark mode (Dark Reader)
+  - <kbd>Shift+E</kbd> Open extensions
   - <kbd>Shift+F</kbd> Full Page Screenshot
   - <kbd>Shift+H/Shift+L</kbd> Previous / Next space
   - <kbd>Shift+I</kbd> View Source
@@ -161,7 +164,6 @@ I also set up some keybindings manually:
   - <kbd>Shift+P</kbd> New incognito window
   - <kbd>Shift+R</kbd> Clear cookies and refresh
   - <kbd>Shift+T</kbd> Toggle toolbar
-  - <kbd>Shift+U</kbd> Toggle uBlock Origin
   - <kbd>Shift+Y</kbd> Copy URL as Markdown
   - <kbd>Shift+W</kbd> Show Archived Tabs
   - <kbd>Shift+Z</kbd> Move Little Arc to Space
