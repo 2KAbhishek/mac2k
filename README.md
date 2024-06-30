@@ -86,45 +86,45 @@ I also set up some keybindings manually:
 
 ###### General Keybindings
 
-| Keybinding                                  | Command                             | Description                        |
-| ------------------------------------------- | ----------------------------------- | ---------------------------------- |
-| <kbd>Cmd</kbd>+<kbd>1..9</kbd>              | workspace `num`                     | Switch to workspace `num`          |
-| <kbd>Cmd</kbd>+<kbd>Shift + 1..9</kbd>      | move-node-to-workspace `num`        | Move window to workspace `num`     |
-| <kbd>Cmd</kbd>+<kbd>Shift + ,//</kbd>       | layout v_tiles / h_tiles            | Vertical / Horizontal tiles        |
-| <kbd>Cmd</kbd>+<kbd>Shift + -/=</kbd>       | resize smart -50/+50                | Inc/Dec window size                |
-| <kbd>Cmd</kbd>+<kbd>h/j/k/l</kbd>           | focus `direction`                   | Focus window in `direction`        |
-| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd>   | move `direction`                    | Move window to `direction`         |
-| <kbd>Cmd</kbd>+<kbd>Shift + C</kbd>         | reload-config                       | Reload configuration               |
-| <kbd>Cmd</kbd>+<kbd>Shift + F</kbd>         | layout floating tiling              | Toggle floating / tiling layout    |
-| <kbd>Cmd</kbd>+<kbd>Shift + M</kbd>         | fullscreen                          | Toggle fullscreen                  |
-| <kbd>Cmd</kbd>+<kbd>Shift + T</kbd>         | layout tiles horizontal vertical    | Toggle horizontal / vertical tiles |
-| <kbd>Cmd</kbd>+<kbd>e</kbd>                 | macos-native-minimize               | Minimize window                    |
-| <kbd>Cmd</kbd>+<kbd>&#8592; / &#8594;</kbd> | workspace --wrap-around prev / next | Previous/Next workspace            |
-| <kbd>Opt</kbd>+<kbd>Shift + Tab</kbd>       | move-workspace-to-monitor           | Move workspace to next screen      |
-| <kbd>Opt</kbd>+<kbd>Tab</kbd>               | workspace-back-and-forth            | Switch between workspaces          |
+| Keybinding                                  | Action                             | Command                             |
+| ------------------------------------------- | ---------------------------------- | ----------------------------------- |
+| <kbd>Cmd</kbd>+<kbd>1..9</kbd>              | Switch to workspace `num`          | workspace `num`                     |
+| <kbd>Cmd</kbd>+<kbd>Shift + 1..9</kbd>      | Move window to workspace `num`     | move-node-to-workspace `num`        |
+| <kbd>Cmd</kbd>+<kbd>Shift + ,//</kbd>       | Vertical / Horizontal tiles        | layout v_tiles / h_tiles            |
+| <kbd>Cmd</kbd>+<kbd>Shift + -/=</kbd>       | Inc/Dec window size                | resize smart -50/+50                |
+| <kbd>Cmd</kbd>+<kbd>h/j/k/l</kbd>           | Focus window in `direction`        | focus `direction`                   |
+| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd>   | Move window to `direction`         | move `direction`                    |
+| <kbd>Cmd</kbd>+<kbd>Shift + C</kbd>         | Reload configuration               | reload-config                       |
+| <kbd>Cmd</kbd>+<kbd>Shift + F</kbd>         | Toggle floating / tiling layout    | layout floating tiling              |
+| <kbd>Cmd</kbd>+<kbd>Shift + M</kbd>         | Toggle fullscreen                  | fullscreen                          |
+| <kbd>Cmd</kbd>+<kbd>Shift + T</kbd>         | Toggle horizontal / vertical tiles | layout tiles horizontal vertical    |
+| <kbd>Cmd</kbd>+<kbd>e</kbd>                 | Minimize window                    | macos-native-minimize               |
+| <kbd>Cmd</kbd>+<kbd>&#8592; / &#8594;</kbd> | Previous/Next workspace            | workspace --wrap-around prev / next |
+| <kbd>Opt</kbd>+<kbd>Shift + Tab</kbd>       | Move workspace to next screen      | move-workspace-to-monitor           |
+| <kbd>Opt</kbd>+<kbd>Tab</kbd>               | Switch between workspaces          | workspace-back-and-forth            |
 
 ###### Service Mode Keybindings
 
-| Keybinding                                | Command                       | Description                      |
-| ----------------------------------------- | ----------------------------- | -------------------------------- |
-| <kbd>Cmd</kbd>+<kbd>Shift + :</kbd>       | mode service                  | Switch to service mode           |
-| <kbd>Esc</kbd>                            | reload-config                 | Reload configuration             |
-| <kbd>r</kbd>                              | flatten-workspace-tree        | Reset layout                     |
-| <kbd>f</kbd>                              | layout floating tiling        | Toggle between floating / tiling |
-| <kbd>Backspace</kbd>                      | close-all-windows-but-current | Close all windows except current |
-| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd> | join-with `direction`         | Join with window in direction    |
+| Keybinding                                | Action                           | Command                       |
+| ----------------------------------------- | -------------------------------- | ----------------------------- |
+| <kbd>Cmd</kbd>+<kbd>Shift + :</kbd>       | Switch to service mode           | mode service                  |
+| <kbd>Esc</kbd>                            | Reload configuration             | reload-config                 |
+| <kbd>r</kbd>                              | Reset layout                     | flatten-workspace-tree        |
+| <kbd>f</kbd>                              | Toggle between floating / tiling | layout floating tiling        |
+| <kbd>Backspace</kbd>                      | Close all windows except current | close-all-windows-but-current |
+| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd> | Join with window in direction    | join-with `direction`         |
 
 ###### Resize Mode Keybindings
 
-| Keybinding                          | Command           | Description            |
-| ----------------------------------- | ----------------- | ---------------------- |
-| <kbd>Cmd</kbd>+<kbd>Shift + R</kbd> | mode resize       | Switch to resize mode  |
-| <kbd>h</kbd>                        | resize width -50  | Decrease window width  |
-| <kbd>j</kbd>                        | resize height +50 | Increase window height |
-| <kbd>k</kbd>                        | resize height -50 | Decrease window height |
-| <kbd>l</kbd>                        | resize width +50  | Increase window width  |
-| <kbd>Enter</kbd>                    | mode main         | Switch to main mode    |
-| <kbd>Esc</kbd>                      | mode main         | Switch to main mode    |
+| Keybinding                          | Action                 | Command           |
+| ----------------------------------- | ---------------------- | ----------------- |
+| <kbd>Cmd</kbd>+<kbd>Shift + R</kbd> | Switch to resize mode  | mode resize       |
+| <kbd>h</kbd>                        | Decrease window width  | resize width -50  |
+| <kbd>j</kbd>                        | Increase window height | resize height +50 |
+| <kbd>k</kbd>                        | Decrease window height | resize height -50 |
+| <kbd>l</kbd>                        | Increase window width  | resize width +50  |
+| <kbd>Enter</kbd>                    | Switch to main mode    | mode main         |
+| <kbd>Esc</kbd>                      | Switch to main mode    | mode main         |
 
 ##### Raycast Keybindings
 
