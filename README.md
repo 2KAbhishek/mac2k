@@ -144,6 +144,7 @@ I also set up some keybindings manually:
 ##### Arc Keybindings
 
 - <kbd>Option</kbd> Shortcuts:
+  - <kbd>/</kbd> Add split
   - <kbd>\`</kbd> Tab Switcher
   - <kbd>Shift+\`</kbd> Tab Switcher (Reverse)
   - <kbd>1..8</kbd> Sidebar item 1 to 8
@@ -162,7 +163,6 @@ I also set up some keybindings manually:
   - <kbd>Shift+O</kbd> Manage spaces
   - <kbd>Shift+P</kbd> New incognito window
   - <kbd>Shift+R</kbd> Clear cookies and refresh
-  - <kbd>Shift+S</kbd> Separate split from tab
   - <kbd>Shift+T</kbd> Toggle toolbar
   - <kbd>Shift+Y</kbd> Copy URL as Markdown
   - <kbd>Shift+W</kbd> Show Archived Tabs
@@ -184,7 +184,7 @@ I also set up some keybindings manually:
   - <kbd>p</kbd> Pin / Unpin tab
   - <kbd>q</kbd> Close Window
   - <kbd>r</kbd> History
-  - <kbd>s</kbd> Add split
+  - <kbd>s</kbd> Separate split from tab
   - <kbd>t</kbd> New tab
   - <kbd>u</kbd> Undo close tab
   - <kbd>w</kbd> Archive tab
