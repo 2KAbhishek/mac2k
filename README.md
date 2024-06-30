@@ -144,7 +144,6 @@ I also set up some keybindings manually:
 ##### Arc Keybindings
 
 - <kbd>Option</kbd> Shortcuts:
-  - <kbd>\\</kbd> Add Split
   - <kbd>\`</kbd> Tab Switcher
   - <kbd>Shift+\`</kbd> Tab Switcher (Reverse)
   - <kbd>1..8</kbd> Sidebar item 1 to 8
@@ -163,10 +162,12 @@ I also set up some keybindings manually:
   - <kbd>Shift+O</kbd> Manage spaces
   - <kbd>Shift+P</kbd> New incognito window
   - <kbd>Shift+R</kbd> Clear cookies and refresh
+  - <kbd>Shift+S</kbd> Separate split from tab
   - <kbd>Shift+T</kbd> Toggle toolbar
   - <kbd>Shift+Y</kbd> Copy URL as Markdown
   - <kbd>Shift+W</kbd> Show Archived Tabs
   - <kbd>Shift+Z</kbd> Move Little Arc to Space
+  - <kbd>\[ / \]</kbd> Previous / Next split
   - <kbd>a</kbd> View downloads
   - <kbd>b</kbd> Duplicate Tab
   - <kbd>c</kbd> Portrait Screenshot
@@ -174,19 +175,19 @@ I also set up some keybindings manually:
   - <kbd>e</kbd> Toggle sidebar
   - <kbd>f</kbd> Find in page
   - <kbd>g</kbd> Open Library
-  - <kbd>h/l</kbd> Previous/Next Tab
+  - <kbd>h / l</kbd> Previous / Next Tab
   - <kbd>i</kbd> Developer Tools
-  - <kbd>j,] / k,[</kbd> Go forward / backward
+  - <kbd>j / k</kbd> Go forward / backward
   - <kbd>m</kbd> ChatGPT message
   - <kbd>n</kbd> New window
   - <kbd>o</kbd> Command bar
   - <kbd>p</kbd> Pin / Unpin tab
   - <kbd>q</kbd> Close Window
   - <kbd>r</kbd> History
-  - <kbd>s</kbd> Separate tab from split
+  - <kbd>s</kbd> Add split
   - <kbd>t</kbd> New tab
   - <kbd>u</kbd> Undo close tab
-  - <kbd>w</kbd> Archive taab
+  - <kbd>w</kbd> Archive tab
   - <kbd>x</kbd> Close split pane
   - <kbd>y</kbd> Copy URL
   - <kbd>z</kbd> Network Inspector
