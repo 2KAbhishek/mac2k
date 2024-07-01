@@ -72,10 +72,11 @@ I also set up some keybindings manually, you can find them in the following docs
 - [Raycast](./docs/raycast.md)
 - [Aerospace](./docs/aerospace.md)
 - [Arc Browser](./docs/arc.md)
-  - Uses [vimium.json from dots2k](https://github.com/2kabhishek/dots2k/tree/main/config/vimium.json) for more keybindings
-- [Qutebrowser from qute2k](https://github.com/2kabhishek/qute2k)
+  - [Uses vimium from dots2k](https://github.com/2kabhishek/dots2k/tree/main/docs/vimium.md)
 - [Alacritty from dots2k](https://github.com/2kabhishek/dots2k/tree/main/docs/alacritty.md)
+- [Tmux from tmux-tilit](https://github.com/2kabhishek/tmux-tilit)
 - [Neovim from nvim2k](https://github.com/2kabhishek/nvim2k)
+- [Qutebrowser from qute2k](https://github.com/2kabhishek/qute2k)
 
 #### Aliases
 
