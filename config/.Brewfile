@@ -34,6 +34,7 @@ brew "libsql"
 brew "libyaml"
 brew "lsd"
 brew "make"
+brew "mas"
 brew "mise"
 brew "moreutils"
 brew "mplayer"
@@ -70,6 +71,7 @@ cask "aptible"
 cask "arc"
 cask "eqmac"
 cask "jordanbaird-ice"
+cask "krita"
 cask "neardrop"
 cask "ollama"
 cask "qutebrowser"
@@ -77,3 +79,7 @@ cask "raycast"
 cask "scroll-reverser"
 cask "stats"
 cask "zoom"
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
