@@ -50,7 +50,6 @@ install_packages() {
     ln -sfn "$PWD/config/.Brewfile" "$HOME/"
     brew bundle install --global --verbose --no-upgrade
     brew bundle check --global --verbose
-    brew bundle cleanup --global --force
 }
 
 setup_symlinks() {
