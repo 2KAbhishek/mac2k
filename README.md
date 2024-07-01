@@ -64,135 +64,17 @@ To manually run steps from [dots2k setup](https://github.com/2kabhishek/dots2k/t
 
 #### Keybindings
 
-I also set up some keybindings manually:
+I also set up some keybindings manually, you can find them in the following docs.
 
-> Cmd = ⌘/Command/Windows/Super, Opt = ⌥/Option/Alt, Ctrl = ⌃/Control/Ctrl, fn =
+> Cmd = ⌘/Command/Windows/Super, Opt = ⌥/Option/Alt, Ctrl = ⌃/Control/Ctrl, fn = Function
 
-##### System Keybindings
-
-- Remap <kbd>Caps Lock</kbd> to <kbd>Esc</kbd>
-- Swap <kbd>Fn</kbd> and <kbd>Ctrl</kbd>
-
-| Keybinding                          | Action                       |
-| ----------------------------------- | ---------------------------- |
-| <kbd>Cmd</kbd> + <kbd>Shift+S</kbd> | Screenshot Panel             |
-| <kbd>Opt</kbd> + <kbd>Shift+S</kbd> | Copy Screenshot to clipboard |
-| <kbd>Cmd</kbd> + <kbd>&#8592;</kbd> | Show Notification Center     |
-| <kbd>Cmd</kbd> + <kbd>&#8593;</kbd> | Show Mission Control         |
-| <kbd>Cmd</kbd> + <kbd>&#8594;</kbd> | Show Application Windows     |
-| <kbd>Cmd</kbd> + <kbd>&#8595;</kbd> | Show Desktop                 |
-
-##### Aerospace Keybindings
-
-###### General Keybindings
-
-| Keybinding                                  | Action                             |
-| ------------------------------------------- | ---------------------------------- |
-| <kbd>Cmd</kbd>+<kbd>1..9</kbd>              | Switch to workspace `num`          |
-| <kbd>Cmd</kbd>+<kbd>Shift + 1..9</kbd>      | Move window to workspace `num`     |
-| <kbd>Cmd</kbd>+<kbd>Shift + ,//</kbd>       | Vertical / Horizontal tiles        |
-| <kbd>Cmd</kbd>+<kbd>Shift + -/=</kbd>       | Inc/Dec window size                |
-| <kbd>Cmd</kbd>+<kbd>h/j/k/l</kbd>           | Focus window in `direction`        |
-| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd>   | Move window to `direction`         |
-| <kbd>Cmd</kbd>+<kbd>Shift + C</kbd>         | Reload configuration               |
-| <kbd>Cmd</kbd>+<kbd>Shift + F</kbd>         | Toggle floating / tiling layout    |
-| <kbd>Cmd</kbd>+<kbd>Shift + M</kbd>         | Toggle fullscreen                  |
-| <kbd>Cmd</kbd>+<kbd>Shift + T</kbd>         | Toggle horizontal / vertical tiles |
-| <kbd>Cmd</kbd>+<kbd>e</kbd>                 | Minimize window                    |
-| <kbd>Cmd</kbd>+<kbd>&#8592; / &#8594;</kbd> | Previous/Next workspace            |
-| <kbd>Opt</kbd>+<kbd>Shift + Tab</kbd>       | Move workspace to next screen      |
-| <kbd>Opt</kbd>+<kbd>Tab</kbd>               | Switch between workspaces          |
-
-###### Service Mode Keybindings
-
-| Keybinding                                | Action                           |
-| ----------------------------------------- | -------------------------------- |
-| <kbd>Cmd</kbd>+<kbd>Shift + :</kbd>       | Switch to service mode           |
-| <kbd>Esc</kbd>                            | Reload configuration             |
-| <kbd>r</kbd>                              | Reset layout                     |
-| <kbd>f</kbd>                              | Toggle between floating / tiling |
-| <kbd>Backspace</kbd>                      | Close all windows except current |
-| <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd> | Join with window in direction    |
-
-###### Resize Mode Keybindings
-
-| Keybinding                          | Action                 |
-| ----------------------------------- | ---------------------- |
-| <kbd>Cmd</kbd>+<kbd>Shift + R</kbd> | Switch to resize mode  |
-| <kbd>h</kbd>                        | Decrease window width  |
-| <kbd>j</kbd>                        | Increase window height |
-| <kbd>k</kbd>                        | Decrease window height |
-| <kbd>l</kbd>                        | Increase window width  |
-| <kbd>Enter</kbd>                    | Switch to main mode    |
-| <kbd>Esc</kbd>                      | Switch to main mode    |
-
-##### Raycast Keybindings
-
-| Keybinding                        | Action             |
-| --------------------------------- | ------------------ |
-| <kbd>Cmd</kbd> + <kbd>Space</kbd> | Raycast            |
-| <kbd>Cmd</kbd> + <kbd>[</kbd>     | Alacritty          |
-| <kbd>Cmd</kbd> + <kbd>]</kbd>     | Qutebrowser        |
-| <kbd>Cmd</kbd> + <kbd>'</kbd>     | Arc Browser        |
-| <kbd>Cmd</kbd> + <kbd>;</kbd>     | Raycast Camera     |
-| <kbd>Cmd</kbd> + <kbd>.</kbd>     | Emoji Picker       |
-| <kbd>Cmd</kbd> + <kbd>i</kbd>     | System Preferences |
-| <kbd>Opt</kbd> + <kbd>Space</kbd> | Menu items search  |
-| <kbd>Opt</kbd> + <kbd>v</kbd>     | Clipboard History  |
-
-##### Arc Keybindings
-
-| Keybinding                              | Action                    |
-| --------------------------------------- | ------------------------- |
-| <kbd>Opt</kbd> + <kbd>/</kbd>           | Add Split                 |
-| <kbd>Opt</kbd> + <kbd>\[ / \]</kbd>     | Previous / Next split     |
-| <kbd>Opt</kbd> + <kbd>\`</kbd>          | Tab Switcher              |
-| <kbd>Opt</kbd> + <kbd>Shift+\`</kbd>    | Tab Switcher (Reverse)    |
-| <kbd>Opt</kbd> + <kbd>1..8</kbd>        | Sidebar item 1 to 8       |
-| <kbd>Opt</kbd> + <kbd>9</kbd>           | Last Sidebar item         |
-| <kbd>Opt</kbd> + <kbd>Shift+1..9</kbd>  | Switch to space 1 to 8    |
-| <kbd>Opt</kbd> + <kbd>Shift+A</kbd>     | Portrait Screenshot       |
-| <kbd>Opt</kbd> + <kbd>Shift+B</kbd>     | Open Little Arc Window    |
-| <kbd>Opt</kbd> + <kbd>Shift+C</kbd>     | Open Console              |
-| <kbd>Opt</kbd> + <kbd>Shift+D</kbd>     | Toggle Dark Reader        |
-| <kbd>Opt</kbd> + <kbd>Shift+E</kbd>     | Open extensions           |
-| <kbd>Opt</kbd> + <kbd>Shift+F</kbd>     | Full Page Screenshot      |
-| <kbd>Opt</kbd> + <kbd>Shift+H / L</kbd> | Previous / Next space     |
-| <kbd>Opt</kbd> + <kbd>Shift+I</kbd>     | View Source               |
-| <kbd>Opt</kbd> + <kbd>Shift+M</kbd>     | Join Meeting              |
-| <kbd>Opt</kbd> + <kbd>Shift+N</kbd>     | Add new space             |
-| <kbd>Opt</kbd> + <kbd>Shift+O</kbd>     | Manage spaces             |
-| <kbd>Opt</kbd> + <kbd>Shift+P</kbd>     | New incognito window      |
-| <kbd>Opt</kbd> + <kbd>Shift+R</kbd>     | Clear cookies and refresh |
-| <kbd>Opt</kbd> + <kbd>Shift+T</kbd>     | Toggle toolbar            |
-| <kbd>Opt</kbd> + <kbd>Shift+X</kbd>     | Close split               |
-| <kbd>Opt</kbd> + <kbd>Shift+Y</kbd>     | Copy URL as Markdown      |
-| <kbd>Opt</kbd> + <kbd>Shift+Z</kbd>     | Move Little Arc to Space  |
-| <kbd>Opt</kbd> + <kbd>a</kbd>           | View downloads            |
-| <kbd>Opt</kbd> + <kbd>b</kbd>           | Duplicate Tab             |
-| <kbd>Opt</kbd> + <kbd>c</kbd>           | Portrait Screenshot       |
-| <kbd>Opt</kbd> + <kbd>d</kbd>           | Developer Mode            |
-| <kbd>Opt</kbd> + <kbd>e</kbd>           | Toggle sidebar            |
-| <kbd>Opt</kbd> + <kbd>f</kbd>           | Find in page              |
-| <kbd>Opt</kbd> + <kbd>g</kbd>           | Open Library              |
-| <kbd>Opt</kbd> + <kbd>h / l </kbd>      | Previous / Next Tab       |
-| <kbd>Opt</kbd> + <kbd>i</kbd>           | Developer Tools           |
-| <kbd>Opt</kbd> + <kbd>j / k </kbd>      | Go forward / backward     |
-| <kbd>Opt</kbd> + <kbd>m</kbd>           | ChatGPT message           |
-| <kbd>Opt</kbd> + <kbd>n</kbd>           | New window                |
-| <kbd>Opt</kbd> + <kbd>o</kbd>           | Command bar               |
-| <kbd>Opt</kbd> + <kbd>p</kbd>           | Pin / Unpin tab           |
-| <kbd>Opt</kbd> + <kbd>q</kbd>           | Close Window              |
-| <kbd>Opt</kbd> + <kbd>r</kbd>           | History                   |
-| <kbd>Opt</kbd> + <kbd>s</kbd>           | View archived tabs        |
-| <kbd>Opt</kbd> + <kbd>t</kbd>           | New tab                   |
-| <kbd>Opt</kbd> + <kbd>u</kbd>           | Undo close tab            |
-| <kbd>Opt</kbd> + <kbd>w</kbd>           | Separate split to tab     |
-| <kbd>Opt</kbd> + <kbd>x</kbd>           | Archive tab               |
-| <kbd>Opt</kbd> + <kbd>y</kbd>           | Copy URL                  |
-| <kbd>Opt</kbd> + <kbd>z</kbd>           | Network Inspector         |
-
-More browser keybindings configured with [Vimium](https://github.com/2kabhishek/dots2k/tree/main/config/vimium.json), Qutebrowser uses [qute2k](https://github.com/2kabhishek/qute2k) for keybindings.
+- [MacOS](./docs/macos.md)
+- [Raycast](./docs/raycast.md)
+- [Aerospace](./docs/aerospace.md)
+- [Arc Browser](./docs/arc.md)
+  - Uses [vimium.json from dots2k](https://github.com/2kabhishek/dots2k/tree/main/config/vimium.json) for more keybindings
+- [Qutebrowser powered by qute2k](https://github.com/2kabhishek/qute2k)
+- [Neovim powered by nvim2k](https://github.com/2kabhishek/nvim2k)
 
 #### Aliases
 
