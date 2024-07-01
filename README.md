@@ -66,7 +66,7 @@ To manually run steps from [dots2k setup](https://github.com/2kabhishek/dots2k/t
 
 I also set up some keybindings manually, you can find them in the following docs.
 
-> Cmd = ⌘/Command/Windows/Super, Opt = ⌥/Option/Alt, Ctrl = ⌃/Control/Ctrl, fn = Function
+> Hint: Cmd = ⌘/Command/Windows, Opt = ⌥/Option/Alt, Ctrl = ⌃/Control, fn = Function
 
 - [MacOS](./docs/macos.md)
 - [Raycast](./docs/raycast.md)
