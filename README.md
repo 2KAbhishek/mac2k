@@ -73,8 +73,9 @@ I also set up some keybindings manually, you can find them in the following docs
 - [Aerospace](./docs/aerospace.md)
 - [Arc Browser](./docs/arc.md)
   - Uses [vimium.json from dots2k](https://github.com/2kabhishek/dots2k/tree/main/config/vimium.json) for more keybindings
-- [Qutebrowser powered by qute2k](https://github.com/2kabhishek/qute2k)
-- [Neovim powered by nvim2k](https://github.com/2kabhishek/nvim2k)
+- [Qutebrowser from qute2k](https://github.com/2kabhishek/qute2k)
+- [Alacritty from dots2k](https://github.com/2kabhishek/dots2k/tree/main/docs/alacritty.md)
+- [Neovim from nvim2k](https://github.com/2kabhishek/nvim2k)
 
 #### Aliases
 
