@@ -1,5 +1,10 @@
 # Aerospace Keybindings
 
+Aerospace is a tiling window manager for macOS similar to i3, [find out more here](https://github.com/nikitabobko/AeroSpace)
+
+- [My configs here](https://github.com/2KAbhishek/mac2k/blob/main/config/aerospace/aerospace.toml)
+- [Live keybindings here](https://github.com/2KAbhishek/mac2k/blob/main/docs/aerospace.md)
+
 ## General Keybindings
 
 | Keybinding                                  | Action                             |

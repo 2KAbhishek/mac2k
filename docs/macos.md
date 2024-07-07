@@ -1,5 +1,7 @@
 # MacOS Keybindings
 
+[My macOS Keybindings](https://github.com/2KAbhishek/mac2k/blob/main/docs/macos.md)
+
 - Remap <kbd>Caps Lock</kbd> to <kbd>Esc</kbd>
 - Swap <kbd>Fn</kbd> and <kbd>Ctrl</kbd>
 

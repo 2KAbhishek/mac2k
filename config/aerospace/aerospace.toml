@@ -78,8 +78,8 @@ PATH = '/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}'
 # cmd-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-cmd-shift-slash = 'layout h_tiles'
-cmd-shift-comma = 'layout v_tiles'
+cmd-shift-slash = 'layout v_tiles'
+cmd-shift-backslash = 'layout h_tiles'
 
 # alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app' # use Super + N to open new alacritty terminal
 # cmd-enter = 'macos-native-fullscreen'

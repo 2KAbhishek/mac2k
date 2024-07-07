@@ -1,5 +1,9 @@
 # Arc Keybindings
 
+Arc is a web browser built on Chrome, that provides some handy features. [find out more](https://arc.net/)
+
+- [Live keybindings](https://github.com/2KAbhishek/mac2k/blob/main/docs/arc.md)
+
 | Keybinding                              | Action                    |
 | --------------------------------------- | ------------------------- |
 | <kbd>Opt</kbd> + <kbd>/</kbd>           | Add Split                 |

@@ -1,5 +1,9 @@
 # Raycast Keybindings
 
+Raycast is a macOS app launcher with tons of expandable plugins.
+
+- [Live keybindings](https://github.com/2KAbhishek/mac2k/blob/main/docs/raycast.md)
+
 | Keybinding                        | Action             |
 | --------------------------------- | ------------------ |
 | <kbd>Cmd</kbd> + <kbd>Space</kbd> | Raycast            |
