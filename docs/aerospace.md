@@ -11,7 +11,7 @@ Aerospace is a tiling window manager for macOS similar to i3, [find out more her
 | ------------------------------------------- | ---------------------------------- |
 | <kbd>Cmd</kbd>+<kbd>1..9</kbd>              | Switch to workspace `num`          |
 | <kbd>Cmd</kbd>+<kbd>Shift + 1..9</kbd>      | Move window to workspace `num`     |
-| <kbd>Cmd</kbd>+<kbd>Shift + ,//</kbd>       | Vertical / Horizontal tiles        |
+| <kbd>Cmd</kbd>+<kbd>Shift + / or \</kbd>    | Vertical / Horizontal tiles        |
 | <kbd>Cmd</kbd>+<kbd>Shift + -/=</kbd>       | Inc/Dec window size                |
 | <kbd>Cmd</kbd>+<kbd>h/j/k/l</kbd>           | Focus window in `direction`        |
 | <kbd>Cmd</kbd>+<kbd>Shift + H/J/K/L</kbd>   | Move window to `direction`         |
