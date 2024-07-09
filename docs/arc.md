@@ -6,7 +6,7 @@ Arc is a web browser built on Chrome, that provides some handy features. [find o
 
 | Keybinding                              | Action                    |
 | --------------------------------------- | ------------------------- |
-| <kbd>Opt</kbd> + <kbd>/</kbd>           | Add Split                 |
+| <kbd>Opt</kbd> + <kbd>\</kbd>           | Add Split                 |
 | <kbd>Opt</kbd> + <kbd>\[ / \]</kbd>     | Previous / Next split     |
 | <kbd>Opt</kbd> + <kbd>\`</kbd>          | Tab Switcher              |
 | <kbd>Opt</kbd> + <kbd>Shift+\`</kbd>    | Tab Switcher (Reverse)    |
