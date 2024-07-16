@@ -63,7 +63,7 @@ setup_mac2k() {
     install_brew
     install_packages
     setup_symlinks
-    cd "$PWD/dots2k" && ./setup.sh -a && cd .. || exit 1
+    cd "$PWD/dots2k" && ./setup.sh && cd .. || exit 1
 }
 
 main() {
