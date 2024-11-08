@@ -6,7 +6,11 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = []
+after-startup-command = [
+    # JankyBorders has a built-in detection of already running process,
+    # so it won't be run twice on AeroSpace restart
+    'exec-and-forget borders active_color=0xff1688f0 inactive_color=0xff494d64 width=6.0'
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -18,7 +22,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 10
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -28,9 +32,23 @@ default-root-container-layout = 'tiles'
 #               tall monitor (anything higher than wide) gets vertical orientation
 default-root-container-orientation = 'auto'
 
+# Mouse follows focus when focused monitor changes
+# Drop it from your config, if you don't like this behavior
+# See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
+# See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
+# Fallback value (if you omit the key): on-focused-monitor-changed = []
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = 'move-mouse window-lazy-center'
+
+# You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
+# Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
+# Also see: https://nikitabobko.github.io/AeroSpace/goodness#disable-hide-app
+automatically-unhide-macos-hidden-apps = true
+
 # Possible values: (qwerty|dvorak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
-key-mapping.preset = 'qwerty'
+[key-mapping]
+preset = 'qwerty'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
@@ -40,12 +58,12 @@ key-mapping.preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 4
-inner.vertical = 4
-outer.left = 4
-outer.bottom = 4
-outer.top = 4
-outer.right = 4
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.bottom = 8
+outer.top = 8
+outer.right = 8
 
 # See https://nikitabobko.github.io/AeroSpace/guide#exec-env-vars
 [exec] # Again, you don't need to copy all config sections to your config.
@@ -78,19 +96,23 @@ PATH = '/opt/homebrew/bin:/opt/homebrew/sbin:${PATH}'
 # cmd-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-cmd-shift-slash = 'layout v_tiles'
-cmd-shift-backslash = 'layout h_tiles'
+cmd-slash = 'layout accordion horizontal vertical'
+cmd-backslash = 'layout tiles horizontal vertical'
 
 # alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app' # use Super + N to open new alacritty terminal
-# cmd-enter = 'macos-native-fullscreen'
+cmd-enter = 'macos-native-fullscreen'
+cmd-q = 'close'
 cmd-e = 'macos-native-minimize'
+cmd-m = 'fullscreen'
 cmd-left = 'workspace --wrap-around prev'
 cmd-right = 'workspace --wrap-around next'
 cmd-shift-c = 'reload-config'
 cmd-shift-f = 'layout floating tiling' # 'floating toggle' in i3
-cmd-shift-m = 'fullscreen'
-cmd-shift-t = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
 f11 = 'fullscreen'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#mode
+cmd-shift-m = 'mode manage'
+cmd-shift-r = 'mode resize'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 cmd-h = 'focus left'
@@ -118,6 +140,7 @@ cmd-6 = 'workspace 6'
 cmd-7 = 'workspace 7'
 cmd-8 = 'workspace 8'
 cmd-9 = 'workspace 9'
+cmd-0 = 'workspace 10'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-shift-1 = 'move-node-to-workspace 1'
@@ -129,20 +152,30 @@ cmd-shift-6 = 'move-node-to-workspace 6'
 cmd-shift-7 = 'move-node-to-workspace 7'
 cmd-shift-8 = 'move-node-to-workspace 8'
 cmd-shift-9 = 'move-node-to-workspace 9'
+cmd-shift-0 = 'move-node-to-workspace 10'
+
+cmd-ctrl-1 = ['move-node-to-workspace 1', 'workspace 1']
+cmd-ctrl-2 = ['move-node-to-workspace 2', 'workspace 2']
+cmd-ctrl-3 = ['move-node-to-workspace 3', 'workspace 3']
+cmd-ctrl-4 = ['move-node-to-workspace 4', 'workspace 4']
+cmd-ctrl-5 = ['move-node-to-workspace 5', 'workspace 5']
+cmd-ctrl-6 = ['move-node-to-workspace 6', 'workspace 6']
+cmd-ctrl-7 = ['move-node-to-workspace 7', 'workspace 7']
+cmd-ctrl-8 = ['move-node-to-workspace 8', 'workspace 8']
+cmd-ctrl-9 = ['move-node-to-workspace 9', 'workspace 9']
+cmd-ctrl-0 = ['move-node-to-workspace 10', 'workspace 10']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#mode
-cmd-shift-semicolon = 'mode service'
-cmd-shift-r = 'mode resize'
-
-# 'service' binding mode declaration.
+# 'manage' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-[mode.service.binding]
-esc = ['reload-config', 'mode main']
+[mode.manage.binding]
+esc = 'mode main'
+enter = 'mode main'
+c = ['reload-config', 'mode main'] # reload config
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 #s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 f = [
@@ -151,10 +184,10 @@ f = [
 ] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
 
-cmd-shift-h = ['join-with left', 'mode main']
-cmd-shift-j = ['join-with down', 'mode main']
-cmd-shift-k = ['join-with up', 'mode main']
-cmd-shift-l = ['join-with right', 'mode main']
+h = ['join-with left', 'mode main']
+j = ['join-with down', 'mode main']
+k = ['join-with up', 'mode main']
+l = ['join-with right', 'mode main']
 
 [mode.resize.binding]
 h = 'resize width -50'
