@@ -36,6 +36,10 @@ configure_macos() {
         defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
         # "Enable Safari’s debug menu"
         defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+        # disable animation
+        defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+        # drag windows from anywhere using cmd+ctrl
+        defaults write -g NSWindowShouldDragOnGesture -bool true
         # "Kill affected applications"
         for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
         ;;
