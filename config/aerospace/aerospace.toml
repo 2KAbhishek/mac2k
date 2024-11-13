@@ -201,3 +201,11 @@ esc = 'mode main'
 if.app-id = 'org.qutebrowser.qutebrowser'
 run = 'layout tiling'
 
+[[on-window-detected]]
+if.app-id = 'org.alacritty'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
