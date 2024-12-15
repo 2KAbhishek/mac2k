@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 configure_macos() {
     read -r -p "Do you want to enable dev friendly macOS configurations? (y/n) " answer
