@@ -9,7 +9,7 @@ after-login-command = []
 after-startup-command = [
     # JankyBorders has a built-in detection of already running process,
     # so it won't be run twice on AeroSpace restart
-    'exec-and-forget borders active_color=0xff1688f0 inactive_color=0xff494d64 width=6.0'
+    'exec-and-forget borders active_color=0xff1688f0 inactive_color=0xff494d64 width=6.0',
 ]
 
 # Start AeroSpace at login
@@ -111,7 +111,7 @@ cmd-down = 'focus-monitor next'
 cmd-shift-leftSquareBracket = 'move-workspace-to-monitor prev'
 cmd-shift-rightSquareBracket = 'move-workspace-to-monitor next'
 cmd-shift-c = 'reload-config'
-cmd-shift-f = 'layout floating tiling' # 'floating toggle' in i3
+cmd-shift-f = 'layout floating tiling'
 f11 = 'fullscreen'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
@@ -206,10 +206,9 @@ if.app-id = 'org.qutebrowser.qutebrowser'
 run = 'layout tiling'
 
 [[on-window-detected]]
-if.app-id = 'org.alacritty'
+if.app-id = 'net.kovidgoyal.kitty'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace 2'
-
