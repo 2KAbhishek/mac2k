@@ -80,6 +80,7 @@ install_brew_and_packages() {
 
 setup_symlinks() {
     echo "Setting up symlinks"
+    ln -sfn "$PWD/config/mac/" "$HOME/.config/"
     ln -sfn "$PWD/config/aerospace" "$HOME/.config/"
     ln -sfn "$PWD/dots2k/config/lazygit/config.yml" "$HOME/Library/Application Support/lazygit/"
 }
