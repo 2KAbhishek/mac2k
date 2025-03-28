@@ -6,7 +6,7 @@
 (defsrc
   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10   f11   f12
   caps a s d f j k l ;
-  fn
+  fn spc
 )
 (defvar
   tap-time 150
@@ -24,16 +24,17 @@
   l (tap-hold $tap-time $hold-time l ralt)
   ; (tap-hold $tap-time $hold-time ; rmet)
   fnl (tap-hold $tap-time $hold-time fn (layer-toggle fn))
+  spacemeta (tap-hold $tap-time $hold-time spc lmet)
 )
 
 (deflayer base
   brdn  brup  _    _    _    _   prev  pp  next  mute  vold  volu
   @escctrl @a @s @d @f @j @k @l @;
-  @fnl
+  @fnl @spacemeta
 )
 
 (deflayer fn
   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10   f11   f12
   @escctrl a s d f j k l ;
-  fn
+  fn spc
 )
