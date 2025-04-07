@@ -90,10 +90,6 @@ setup_mac2k() {
     install_brew_and_packages
     setup_symlinks
     cd "$PWD/dots2k" && ./setup.sh && cd .. || exit 1
-
-    LOCAL_CONFIG="$HOME/.config/shell/local.sh"
-    echo 'source "$HOME/.config/mac/environment.sh"' >>$LOCAL_CONFIG
-    echo 'source "$HOME/.config/mac/aliases.sh"' >>$LOCAL_CONFIG
 }
 
 main() {
