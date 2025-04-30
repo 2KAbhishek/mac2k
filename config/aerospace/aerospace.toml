@@ -106,14 +106,22 @@ cmd-e = 'macos-native-minimize'
 cmd-m = 'fullscreen'
 cmd-left = 'workspace --wrap-around prev'
 cmd-right = 'workspace --wrap-around next'
-cmd-up = 'focus-monitor prev'
-cmd-down = 'focus-monitor next'
+cmd-up = 'focus-monitor --wrap-around up'
+cmd-down = 'focus-monitor --wrap-around down'
+
+cmd-shift-left = 'move-workspace-to-monitor left'
+cmd-shift-right = 'move-workspace-to-monitor right'
+cmd-shift-up = 'move-workspace-to-monitor up'
+cmd-shift-down = 'move-workspace-to-monitor down'
+
 cmd-shift-leftSquareBracket = 'move-workspace-to-monitor prev'
 cmd-shift-rightSquareBracket = 'move-workspace-to-monitor next'
-cmd-ctrl-left = 'move-node-to-monitor prev'
-cmd-ctrl-right = 'move-node-to-monitor next'
-cmd-ctrl-up = 'move-workspace-to-monitor prev'
-cmd-ctrl-down = 'move-workspace-to-monitor next'
+
+cmd-ctrl-left = 'move-node-to-monitor left'
+cmd-ctrl-right = 'move-node-to-monitor right'
+cmd-ctrl-up = 'move-node-to-monitor up'
+cmd-ctrl-down = 'move-node-to-monitor down'
+
 cmd-shift-c = 'reload-config'
 cmd-shift-f = 'layout floating tiling'
 f11 = 'fullscreen'
@@ -183,7 +191,7 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 [mode.manage.binding]
 esc = 'mode main'
 enter = 'mode main'
-c = ['reload-config', 'mode main'] # reload config
+c = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 #s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
 f = [
@@ -207,7 +215,7 @@ esc = 'mode main'
 
 [[on-window-detected]]
 if.app-id = 'org.qutebrowser.qutebrowser'
-run = 'layout tiling'
+run = ['layout tiling', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
@@ -216,3 +224,8 @@ run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
 run = 'move-node-to-workspace 2'
+
+[workspace-to-monitor-force-assignment]
+1 = 3
+2 = 2
+3 = 1
