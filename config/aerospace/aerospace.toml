@@ -213,17 +213,22 @@ l = 'resize width +50'
 enter = 'mode main'
 esc = 'mode main'
 
-[[on-window-detected]]
-if.app-id = 'org.qutebrowser.qutebrowser'
-run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'com.1password.1password'
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'org.keepassxc.keepassxc'
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = ['layout floating']
+
+[[on-window-detected]]
+if.app-id = 'org.qutebrowser.qutebrowser'
+run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
