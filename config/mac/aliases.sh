@@ -1,6 +1,7 @@
 alias aerc='"$EDITOR" ~/.config/aerospace/aerospace.toml'
 alias aerr="aerospace reload-config"
 alias aert="aerospace enable toggle"
+
 alias brc="brew cleanup"
 alias brdump="brew bundle dump --no-restart --global --force"
 alias bri="brew install"
@@ -10,10 +11,12 @@ alias brr="brew uninstall"
 alias brres="brew bundle install --global --verbose --no-upgrade"
 alias brs="brew search"
 alias bru="brew upgrade"
+
 alias ip="ipconfig getifaddr en0"
 alias macdis="displayplacer 'id:1 enablded:false'"
-alias next="nowplaying-cli next"
 alias open="open_command"
+
+alias next="nowplaying-cli next"
 alias play="nowplaying-cli togglePlayPause"
 alias prev="nowplaying-cli previous"
 alias qutc='"$EDITOR" ~/.qutebrowser/config.py'

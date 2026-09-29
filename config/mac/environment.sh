@@ -1,3 +1,7 @@
+export TERMINAL="${TERMINAL:-kitty}"
+export CLIPCOPY="pbcopy"
+export CLIPPASTE="pbpaste"
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export MANPATH="/opt/local/share/man:$MANPATH"
